@@ -1,0 +1,20 @@
+/* q3_team.css - 3-column responsive team layout */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#f5f7fb;color:#0b1220}
+.container{max-width:1000px;margin:2rem auto;padding:1rem}
+h1{margin-bottom:1rem;text-align:center}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:start}
+.card{background:#fff;padding:1rem;border:1px solid #e6eef6;border-radius:10px;box-shadow:0 6px 18px rgba(11,18,32,0.06);text-align:center}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+.card h3{margin:0.75rem 0 0.25rem 0}
+.role{font-weight:700;color:#2563eb;margin:0.25rem 0}
+.card p{color:#44566a}
+
+/* highlight team lead */
+.card.lead{background:#fff8f0;border:2px solid #ff9100;box-shadow:0 8px 30px rgba(255,145,0,0.08)}
+
+/* responsive: stack into single column under 600px */
+@media (max-width:600px){
+  .team{grid-template-columns:1fr}
+}
+/* Box model: uniform padding/margins used above */

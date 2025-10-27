@@ -1,0 +1,30 @@
+/* q5_pricing.css - pricing table with hover and equal heights */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;background:#f3f6fb;color:#0b1220;padding:2rem}
+.container{max-width:1000px;margin:0 auto}
+h1{text-align:center;margin-bottom:1rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:stretch}
+
+/* plan card base */
+.plan{background:#fff;padding:1.5rem;border-radius:10px;border:1px solid #e6eef6;display:flex;flex-direction:column;justify-content:space-between;transition:transform 0.25s ease,background 0.25s ease}
+.plan h2{margin:0 0 0.5rem 0}
+.price{font-size:1.5rem;font-weight:700;margin:0.5rem 0}
+.plan ul{list-style:none;padding-left:0;margin:0 0 1rem 0}
+.plan li{margin:0.4rem 0;color:#5b6b87}
+
+/* buttons as links */
+.btn{text-decoration:none;padding:0.6rem 0.8rem;border-radius:6px;border:1px solid transparent;background:#2563eb;color:white;display:inline-block;text-align:center}
+
+/* hover: enlarge and change background */
+.plan:hover{transform:scale(1.03);background:linear-gradient(180deg,#ffffff,#fbfdff)}
+
+/* highlight popular plan */
+.plan.popular{border:2px solid #ff6b6b;box-shadow:0 10px 30px rgba(255,107,107,0.08)}
+.plan.popular .btn{background:#ff6b6b}
+
+/* equal height ensured via align-items:stretch and display:flex on plan to push content to bottom */
+
+/* responsive stack */
+@media (max-width:800px){
+  .plans{grid-template-columns:1fr;gap:1rem}
+}

@@ -1,0 +1,23 @@
+/* q4_article.css - long article with typographic styling */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family: Georgia, 'Times New Roman', serif;background:#f7fafc;color:#102a43;padding:2rem}
+.container{max-width:800px;margin:0 auto;background:#fff;padding:2rem;border-radius:8px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+
+header h1{font-size:2rem;margin-bottom:0.25rem}
+.meta{color:#6b7c93;margin-bottom:1rem}
+
+/* paragraphs spacing via margin */
+.content p{margin:1rem 0;font-size:1rem;line-height:1.8;text-align:justify}
+
+/* first letter larger */
+.content p::first-letter{font-size:2.5rem;float:left;margin-right:0.5rem;font-weight:700;color:#1b3b5a}
+
+/* first line bold */
+.content p::first-line{font-weight:700}
+
+/* mark styling */
+.content mark{background:#fffbcc;padding:0.1rem 0.2rem;border-radius:3px}
+
+/* blockquote emphasis */
+blockquote{border-left:6px solid #cbd5e1;background:#f1f5f9;padding:1rem 1rem;margin:1.5rem 0}
+blockquote p{margin:0;font-style:italic;color:#334e68}

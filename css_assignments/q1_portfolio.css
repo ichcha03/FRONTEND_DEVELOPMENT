@@ -1,0 +1,67 @@
+/* q1_portfolio.css - Personal portfolio */
+/* Use of px, em, %, vh, rem to satisfy requirement */
+/* Accessible color contrast */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#10b981;
+  --text:#e6f0ff;
+  --muted:#a8b3c7;
+  --header-h:4rem;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg,#071226 0%, var(--bg) 100%);
+  color:var(--text);
+  line-height:1.5;
+  font-size:16px; /* base: px */
+}
+.container{max-width:1000px;margin:0 auto;padding:1rem;}
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:rgba(3,7,18,0.85);
+  backdrop-filter:blur(4px);
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  z-index:50;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0.75rem 1rem;
+}
+.name{font-size:1.1rem;margin:0;color:var(--accent);letter-spacing:0.02em}
+.nav a{color:var(--muted);text-decoration:none;margin-left:1rem;font-size:0.95rem}
+.nav a:hover{color:var(--text)}
+
+/* main space accounts for fixed header */
+.main{padding-top:calc(var(--header-h) + 1rem);min-height:80vh;display:flex;align-items:flex-start}
+.intro{display:flex;gap:1.5rem;align-items:center;padding:2rem;background:var(--card);border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+
+/* profile image sized with % and rem */
+.profile{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,0.06)}
+
+/* use em for bio headings */
+.bio h2{font-size:1.4em;margin:0 0 0.5rem 0;color:var(--accent)}
+.bio p{color:var(--muted);margin:0.5rem 0}
+
+/* footer sticky to bottom using flexbox behavior of body isn't available -> keep it simple */
+.site-footer{
+  margin-top:2rem;
+  padding:1rem 0;
+  text-align:center;
+  background:transparent;color:var(--muted)
+}
+
+/* responsive: switch to column on small screens */
+@media (max-width:700px){
+  .intro{flex-direction:column;align-items:center;text-align:center}
+  .profile{width:140px;height:140px}
+  .nav{display:none}
+}
+/* comments: header fixed, footer remains at page bottom visually */
