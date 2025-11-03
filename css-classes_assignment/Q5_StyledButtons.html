@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Buttons</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .primary { background: royalblue; color: white; }
+    .secondary { background: gray; color: white; }
+    .outline { border: 2px solid royalblue; color: royalblue; background: none; }
+    .disabled { background: lightgray; color: #777; cursor: not-allowed; }
+    button:hover:not(:disabled) { transform: scale(1.05); }
+    button:active:not(:disabled) { background: darkblue; }
+    button:focus { outline: 2px solid orange; }
+  </style>
+</head>
+<body>
+  <button class="primary">Primary</button>
+  <button class="secondary">Secondary</button>
+  <button class="outline">Outline</button>
+  <button class="disabled" disabled>Disabled</button>
+</body>
+</html>

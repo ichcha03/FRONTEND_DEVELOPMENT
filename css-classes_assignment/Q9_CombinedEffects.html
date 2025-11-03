@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Combined Effects</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      height: 100vh;
+      font-family: Arial;
+    }
+    button {
+      padding: 15px 25px;
+      border: none;
+      background: royalblue;
+      color: white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    button:hover {
+      background: deepskyblue;
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <button>Hover Me</button>
+  <button>Click Me</button>
+  <button>Try Me</button>
+</body>
+</html>

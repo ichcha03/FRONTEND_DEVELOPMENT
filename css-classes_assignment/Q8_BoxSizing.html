@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Sizing Comparison</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      font-family: Arial;
+    }
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid black;
+      background: lightcoral;
+      text-align: center;
+    }
+    .border-box {
+      box-sizing: border-box;
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Default (content-box)</div>
+  <div class="box border-box">Border-box</div>
+  <p>Note: The green box appears smaller because padding and border are included in total width.</p>
+</body>
+</html>

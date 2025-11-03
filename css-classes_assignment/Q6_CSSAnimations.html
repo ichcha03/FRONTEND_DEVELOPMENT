@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animations</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      gap: 20px;
+      font-family: Arial;
+    }
+    .box {
+      width: 50px; height: 50px; background: red;
+      animation: move 3s ease-in-out infinite alternate;
+    }
+    .ball {
+      width: 50px; height: 50px; background: blue; border-radius: 50%;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .text {
+      font-size: 20px; color: green;
+      animation: colorChange 4s ease-in-out infinite alternate;
+    }
+    @keyframes move {
+      from { transform: translateX(0); }
+      to { transform: translateX(100px); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-50px); }
+    }
+    @keyframes colorChange {
+      from { color: green; }
+      to { color: purple; }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <div class="ball"></div>
+  <div class="text">Color Changing Text</div>
+</body>
+</html>

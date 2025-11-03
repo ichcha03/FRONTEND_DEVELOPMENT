@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element selector */
+    p { color: darkblue; }
+    /* Class selector */
+    .highlight { background-color: yellow; }
+    /* ID selector */
+    #special { font-weight: bold; color: red; }
+    /* Attribute selector */
+    a[target="_blank"] { color: green; }
+    /* Descendant selector */
+    div p { font-style: italic; }
+    /* Adjacent sibling selector */
+    h2 + p { color: orange; }
+  </style>
+</head>
+<body>
+  <header><h1>CSS Selectors Practice</h1></header>
+  <main>
+    <p>This is a normal paragraph.</p>
+    <p class="highlight">This uses a class selector.</p>
+    <p id="special">This uses an ID selector.</p>
+    <a href="#" target="_blank">External Link</a>
+    <div>
+      <p>Inside div (descendant)</p>
+    </div>
+    <h2>Heading</h2>
+    <p>Adjacent sibling example</p>
+  </main>
+  <footer><p>End of demo</p></footer>
+</body>
+</html>
