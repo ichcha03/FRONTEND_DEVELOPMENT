@@ -1,29 +1,21 @@
-# 💪 CSS Flexbox Assignment  
-**Author:** Ichcha Mehrishi  
+# 🧱 CSS Model Assignment  
+**Author:**ICHCHA MEHRISHI
 **Course:** Web Development (5th Semester)  
 **Institute:** GLA University  
-**Branch:** flex
+**Branch:** css-model  
 
 ---
 
 ## 📘 Overview
-This assignment is fully dedicated to mastering **CSS Flexbox**, one of the most powerful layout systems in modern web design.  
-It demonstrates how Flexbox simplifies creating **responsive**, **aligned**, and **visually balanced** layouts across multiple screen sizes.  
-
-Each question contains **separate `.html` and `.css` files** that build understanding from basic alignment to complex responsive layouts using Flexbox.
+This assignment focuses on understanding the **CSS Box Model** and **Flexbox layout system**.  
+It includes practical examples showing how padding, borders, margins, and flexible boxes shape webpage layouts.
 
 ---
 
 ## 🧩 Topics Covered
-- ✅ **Core Flexbox Properties:**  
-  - `display: flex`, `flex-direction`, `justify-content`, `align-items`, `flex-wrap`, `align-content`, `gap`  
-- ✅ **Centering Techniques** (Horizontal and Vertical Alignment)  
-- ✅ **Flexbox-Based Page Layouts:** Header, Sidebar, Footer, and Multi-section structures  
-- ✅ **Equal-height Columns and Responsive Boxes**  
-- ✅ **Nested Flex Containers** (Flex inside Flex)  
-- ✅ **Alignment and Distribution of Items across Devices**  
-- ✅ **Responsive Design with Media Queries**  
-- ✅ **Hover Effects and Simple CSS Transitions**  
-- ✅ **Practical Implementations:** Product cards, pricing tables, portfolio, loaders, and more  
+- CSS Box Model (content, padding, border, margin)  
+- Flexbox basics (`display: flex`, `justify-content`, `align-items`)  
+- Responsive box alignment  
+- Equal spacing and wrapping using Flexbox  
 
 ---
