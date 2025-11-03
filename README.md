@@ -1,26 +1,29 @@
-# 🎨 CSS Basics Assignment  
-**Author:** Ichcha Mehrishi
+# 💪 CSS Flexbox Assignment  
+**Author:** Ichcha Mehrishi  
 **Course:** Web Development (5th Semester)  
 **Institute:** GLA University  
-**Branch:** css  
+**Branch:** flex
 
 ---
 
 ## 📘 Overview
-This assignment demonstrates the use of **core CSS styling and layout techniques** applied through 10 structured questions.  
-Each question includes **separate `.html` and `.css` files** implementing modern, semantic, and responsive web design principles.
+This assignment is fully dedicated to mastering **CSS Flexbox**, one of the most powerful layout systems in modern web design.  
+It demonstrates how Flexbox simplifies creating **responsive**, **aligned**, and **visually balanced** layouts across multiple screen sizes.  
+
+Each question contains **separate `.html` and `.css` files** that build understanding from basic alignment to complex responsive layouts using Flexbox.
 
 ---
 
 ## 🧩 Topics Covered
-- ✅ CSS Selectors, Colors, and Units (`px`, `em`, `rem`, `%`, `vh`)  
-- ✅ Flexbox and Grid Layouts  
-- ✅ Background Images, Gradients & Parallax Effects  
-- ✅ Box Model (Margin, Border, Padding, Outline)  
-- ✅ Pseudo-classes and Pseudo-elements (`:hover`, `:focus`, `::first-letter`, `::first-line`)  
-- ✅ Responsive Design using Media Queries  
-- ✅ Form Styling and Centering Techniques  
-- ✅ CSS Transitions and Hover Animations  
-- ✅ Sticky, Fixed, and Relative Positioning  
+- ✅ **Core Flexbox Properties:**  
+  - `display: flex`, `flex-direction`, `justify-content`, `align-items`, `flex-wrap`, `align-content`, `gap`  
+- ✅ **Centering Techniques** (Horizontal and Vertical Alignment)  
+- ✅ **Flexbox-Based Page Layouts:** Header, Sidebar, Footer, and Multi-section structures  
+- ✅ **Equal-height Columns and Responsive Boxes**  
+- ✅ **Nested Flex Containers** (Flex inside Flex)  
+- ✅ **Alignment and Distribution of Items across Devices**  
+- ✅ **Responsive Design with Media Queries**  
+- ✅ **Hover Effects and Simple CSS Transitions**  
+- ✅ **Practical Implementations:** Product cards, pricing tables, portfolio, loaders, and more  
 
 ---

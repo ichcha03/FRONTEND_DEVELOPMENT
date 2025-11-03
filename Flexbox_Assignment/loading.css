@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#fff}
+.loader{display:flex;gap:12px;align-items:flex-end}
+.dot{width:16px;height:16px;border-radius:50%;background:#0a74da;animation:jump .8s ease-in-out infinite;transform:translateY(0)}
+.d1{animation-delay:0s}
+.d2{animation-delay:0.12s}
+.d3{animation-delay:0.24s}
+@keyframes jump{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-18px)}
+  100%{transform:translateY(0)}
+}
