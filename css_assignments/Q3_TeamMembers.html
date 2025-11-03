@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Team Members - Gaurav</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial;background:#f5f5f5;color:#222;padding:2rem}
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:1000px;margin:0 auto}
+    .card{background:#fff;padding:1rem;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+    .card h3{margin-bottom:0.4rem}
+    .card p{color:#555;font-size:0.95rem}
+
+    /* Highlight team lead */
+    .lead{background:#eaf4ff;border:1px solid #8ec3ff}
+
+    /* Responsive single column below 600px */
+    @media (max-width:600px){
+      .team{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 style="text-align:center;margin-bottom:1rem">Our Team</h1>
+    <section class="team" aria-label="Team members">
+      <article class="card lead">
+        <h3>Rahul Sharma <small style="color:#666">- Team Lead</small></h3>
+        <p>Leads front-end development and coordinates tasks.</p>
+      </article>
+      <article class="card">
+        <h3>Anita Verma <small style="color:#666">- Designer</small></h3>
+        <p>Responsible for UI design and visual assets.</p>
+      </article>
+      <article class="card">
+        <h3>Vikram Singh <small style="color:#666">- Developer</small></h3>
+        <p>Handles implementation and integration tasks.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
