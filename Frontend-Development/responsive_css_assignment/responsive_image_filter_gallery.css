@@ -1,0 +1,20 @@
+
+/* Q1: Responsive Image Filter Gallery */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;padding:20px}
+main h1{text-align:center;margin-bottom:16px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery figure{margin:0}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:6px;display:block;transition:filter .4s ease,transform .3s ease}
+.gallery figure:nth-child(1) img{filter:blur(3px)}
+.gallery figure:nth-child(2) img{filter:grayscale(100%)}
+.gallery figure:nth-child(3) img{filter:sepia(80%)}
+.gallery figure:nth-child(4) img{filter:brightness(60%)}
+.gallery figure:nth-child(5) img{filter:contrast(150%)}
+.gallery figure:nth-child(6) img{filter:hue-rotate(90deg)}
+.gallery figure:hover img{filter:none;transform:scale(1.02)}
+.gallery figcaption{text-align:center;margin-top:8px;font-size:0.95rem}
+@media (max-width:600px){
+  .gallery{grid-template-columns:1fr}
+  .gallery img{height:200px}
+}

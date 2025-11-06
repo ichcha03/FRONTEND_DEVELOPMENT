@@ -1,0 +1,15 @@
+
+/* Q10: Responsive Dashboard Summary */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#fff}
+.layout{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.sidebar{background:#222;color:#fff;padding:16px}
+.main{padding:16px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:#f5f7ff;padding:18px;border-radius:8px;transition:transform .2s,box-shadow .2s;animation:load .45s ease}
+.card:hover{transform:scale(1.03);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+@keyframes load{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:750px){
+  .layout{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+}

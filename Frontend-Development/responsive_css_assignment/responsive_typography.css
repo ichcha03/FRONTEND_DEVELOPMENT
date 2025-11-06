@@ -1,0 +1,10 @@
+
+/* Q4: Responsive Typography */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;padding:40px;background:#fff;color:#111}
+.typography{text-align:center;max-width:900px;margin:0 auto;padding:20px}
+.typography h1{font-size:clamp(1.5rem,4vw,3rem);margin-bottom:16px}
+.typography p{font-size:clamp(1rem,2vw,1.5rem);line-height:1.6}
+@media (max-width:700px){
+  .typography p{line-height:1.4;padding:8px}
+}
