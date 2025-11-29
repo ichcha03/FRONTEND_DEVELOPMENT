@@ -1,7 +1,7 @@
-# ⚡ JavaScript Oops Assignment
-**Author:** Ichcha Mehrihsi  
+# ⚡ JavaScript jQuery & Ajax Assignment
+**Author:** Ichcha Mehrishi  
 **Course:** Web Development (5th Semester)  
 **Institute:** GLA University  
-**Branch:** js-oops
+**Branch:** jquery
 
 ---
